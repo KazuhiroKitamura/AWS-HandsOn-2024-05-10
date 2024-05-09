@@ -1,14 +1,11 @@
 Resources:
-  Service:
-    Type: AWS::AppRunner::Service
+  VPC:
+    Type: AWS::EC2::VPC
     Properties:
-      SourceConfiguration:
-        ImageRepository:
-          ImageIdentifier: public.ecr.aws/nginx/nginx:latest
-          ImageRepositoryType: ECR_PUBLIC
-          ImageConfiguration:
-            Port: '80'
-      ServiceName: nginx-service
-      NetworkConfiguration:
-        EgressConfiguration:
-          EgressType: DEFAULT
+      Type: AWS::EC2::VPC
+      Properties:
+        CidrBlock: 10.16.0.0/16
+        EnableDnsHostnames: true
+        EnableDnsSupport: true
+        Tags:
+          - Name:TEST
