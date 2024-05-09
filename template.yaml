@@ -6,4 +6,6 @@ Resources:
       EnableDnsHostnames: TRUE
       EnableDnsSupport: true
       Tags:
-        - Name: TEST
+        - Key: Name
+          Value: TEST
+          
