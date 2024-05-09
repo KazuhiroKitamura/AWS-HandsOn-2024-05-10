@@ -11,14 +11,12 @@ Resources:
   Subnet:
     Type: AWS::EC2::Subnet
     Properties:
-      Type: AWS::EC2::Subnet
-      Properties:
-        AvailabilityZone: ap-northeast-1a
-        CidrBlock: 10.16.0.0/24
-        Tags:
-          - key:Name
-          - Value:TESTSUBNET
-        VpcId: !Ref VPC
+      AvailabilityZone: ap-northeast-1a
+      CidrBlock: 10.16.0.0/24
+      Tags:
+        - Key: Name
+        - Value: TESTSUBNET
+      VpcId: !Ref VPC
 Metadata:
   AWS::Composer::Groups:
     Group:
