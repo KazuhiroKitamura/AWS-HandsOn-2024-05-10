@@ -2,8 +2,8 @@ Resources:
   VPC:
     Type: AWS::EC2::VPC
     Properties:
-      Type: AWS::EC2::VPC
-      Properties:
-        CidrBlock: 10.16.0.0/16
-        Tags:
-          - Name: TEST
+      CidrBlock: 10.16.0.0/16
+      EnableDnsHostnames: TRUE
+      EnableDnsSupport: true
+      Tags:
+        - Name: TEST
