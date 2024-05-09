@@ -8,4 +8,4 @@ Resources:
         EnableDnsHostnames: true
         EnableDnsSupport: true
         Tags:
-          - Name:TEST
+          - Name: TEST
