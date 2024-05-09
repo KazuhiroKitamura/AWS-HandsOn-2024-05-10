@@ -1,0 +1,14 @@
+Resources:
+  Service:
+    Type: AWS::AppRunner::Service
+    Properties:
+      SourceConfiguration:
+        ImageRepository:
+          ImageIdentifier: public.ecr.aws/nginx/nginx:latest
+          ImageRepositoryType: ECR_PUBLIC
+          ImageConfiguration:
+            Port: '80'
+      ServiceName: nginx-service
+      NetworkConfiguration:
+        EgressConfiguration:
+          EgressType: DEFAULT
