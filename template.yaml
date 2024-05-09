@@ -22,5 +22,5 @@ Metadata:
     Group:
       Label: GroupA
       Members:
-        - Subnet
         - VPC
+        - Subnet
