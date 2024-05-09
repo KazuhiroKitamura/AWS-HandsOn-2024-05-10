@@ -15,7 +15,7 @@ Resources:
       CidrBlock: 10.16.0.0/24
       Tags:
         - Key: Name
-        - Value: TESTSUBNET
+          Value: TESTSUBNET
       VpcId: !Ref VPC
 Metadata:
   AWS::Composer::Groups:
